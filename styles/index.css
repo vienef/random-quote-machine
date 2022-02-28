@@ -39,9 +39,9 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
+  max-height: 100vh;
+  max-height: fill-available;
+  max-height: -webkit-fill-available;
   color: #F5F5F5;
   font: 400 calc(5vh / 2)/1 "Raleway", sans-serif;
   background: #0A0A0A;
@@ -54,7 +54,7 @@ body #quote-box {
   overflow: hidden;
 }
 body #quote-box > div {
-  height: 100vh;
+  height: 100%;
 }
 body #quote-box > div:first-child {
   display: flex;
