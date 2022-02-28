@@ -166,7 +166,7 @@ body {
     height: 100vh;
     overflow: hidden;
 
-    > div { height: 100%; }
+    > div { height: 100vh; }
     
     > div:first-child {
       display: flex;
