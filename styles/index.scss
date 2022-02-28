@@ -166,7 +166,8 @@ body {
   #quote-box {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 
     > div { height: 100%; }
