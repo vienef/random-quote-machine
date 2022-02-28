@@ -51,6 +51,7 @@ body #quote-box {
   display: flex;
   align-items: center;
   height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 body #quote-box > div {
