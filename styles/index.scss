@@ -1,0 +1,304 @@
+// Basic variables
+$base_size: 5vh;
+$transparency: 0.5;
+$color_gap_1: #{transparent 20%, transparent 30%};
+$color_gap_2: #{transparent 45%, transparent 55%};
+$color_gap_3: #{transparent 70%, transparent 80%};
+
+// Inferno Ibaraki Doji color palette
+$inferno_hover: rgb(101, 84, 174);
+$inferno_button: rgb(44, 39, 150);
+$inferno_umbra: rgba(139, 114, 190, $transparency);
+$inferno_penumbra: #{
+  rgba(44, 39, 150, $transparency),
+  rgba(63, 54, 158, $transparency),
+  rgba(82, 69, 166, $transparency),
+  rgba(101, 84, 174, $transparency),
+  rgba(120, 99, 182, $transparency)
+};
+$inferno_atumbra: #{
+  rgba(120, 99, 182, $transparency),
+  rgba(101, 84, 174, $transparency),
+  rgba(82, 69, 166, $transparency),
+  rgba(63, 54, 158, $transparency),
+  rgba(44, 39, 150, $transparency)
+};
+$inferno: #{$inferno_penumbra, $inferno_umbra, $inferno_atumbra};
+
+// Azurestorm Ichimokuren color palette
+$azurestorm_hover: rgb(106, 201, 190);
+$azurestorm_button: rgb(0, 128, 128);
+$azurestorm_umbra: rgba(177, 249, 232, $transparency);
+$azurestorm_penumbra: #{
+  rgba(0, 128, 128, $transparency),
+  rgba(35, 152, 149, $transparency),
+  rgba(71, 176, 170, $transparency),
+  rgba(106, 201, 190, $transparency),
+  rgba(142, 225, 211, $transparency)
+};
+$azurestorm_atumbra: #{
+  rgba(142, 225, 211, $transparency),
+  rgba(106, 201, 190, $transparency),
+  rgba(71, 176, 170, $transparency),
+  rgba(35, 152, 149, $transparency),
+  rgba(0, 128, 128, $transparency)
+};
+$azurestorm: #{$azurestorm_penumbra, $azurestorm_umbra, $azurestorm_atumbra};
+
+// Crimson Yoto color palette
+$crimson_hover: rgb(201, 70, 49);
+$crimson_button: rgb(153, 0, 0);
+$crimson_umbra: rgba(233, 116, 81, $transparency);
+$crimson_penumbra: #{
+  rgba(153, 0, 0, $transparency),
+  rgba(169, 23, 16, $transparency),
+  rgba(185, 46, 32, $transparency),
+  rgba(201, 70, 49, $transparency),
+  rgba(217, 93, 65, $transparency)
+};
+$crimson_atumbra: #{
+  rgba(217, 93, 65, $transparency),
+  rgba(201, 70, 49, $transparency),
+  rgba(185, 46, 32, $transparency),
+  rgba(169, 23, 16, $transparency),
+  rgba(153, 0, 0, $transparency)
+};
+$crimson: #{$crimson_penumbra, $crimson_umbra, $crimson_atumbra};
+
+// Onikiri Reforged color palette
+$reforged_hover: rgb(245, 83, 1);
+$reforged_button: rgb(230, 0, 1);
+$reforged_umbra: rgba(255, 139, 1, $transparency);
+$reforged_penumbra: #{
+  rgba(230, 0, 1, $transparency),
+  rgba(235, 28, 1, $transparency),
+  rgba(240, 56, 1, $transparency),
+  rgba(245, 83, 1, $transparency),
+  rgba(250, 111, 1, $transparency)
+};
+$reforged_atumbra: #{
+  rgba(250, 111, 1, $transparency),
+  rgba(245, 83, 1, $transparency),
+  rgba(240, 56, 1, $transparency),
+  rgba(235, 28, 1, $transparency),
+  rgba(230, 0, 1, $transparency)
+};
+$reforged: #{$reforged_penumbra, $reforged_umbra, $reforged_atumbra};
+
+// Monumental Otakemaru color palette
+$monumental_hover: rgb(185, 71, 177);
+$monumental_button: rgb(81, 40, 137);
+$monumental_umbra: rgba(255, 92, 204, $transparency);
+$monumental_penumbra: #{
+  rgba(81, 40, 137, $transparency),
+  rgba(116, 50, 150, $transparency),
+  rgba(151, 61, 164, $transparency),
+  rgba(185, 71, 177, $transparency),
+  rgba(220, 82, 191, $transparency)
+};
+$monumental_atumbra: #{
+  rgba(220, 82, 191, $transparency),
+  rgba(185, 71, 177, $transparency),
+  rgba(151, 61, 164, $transparency),
+  rgba(116, 50, 150, $transparency),
+  rgba(81, 40, 137, $transparency)
+};
+$monumental: #{$monumental_penumbra, $monumental_umbra, $monumental_atumbra};
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+:root {
+  // Inferno Ibaraki Doji color palette
+  --inferno-hover: #{$inferno_hover};
+  --inferno-button: #{$inferno_button};
+  --inferno-umbra: #{$inferno_umbra};
+  --flaming-inferno: #{$inferno}, #{$color_gap_1}, #{$inferno}, #{$color_gap_2}, #{$inferno}, #{$color_gap_3}, #{$inferno};
+  // Azurestorm Ichimokuren color palette
+  --azurestorm-hover: #{$azurestorm_hover};
+  --azurestorm-button: #{$azurestorm_button};
+  --azurestorm-umbra: #{$azurestorm_umbra};
+  --flaming-azurestorm: #{$azurestorm}, #{$color_gap_1}, #{$azurestorm}, #{$color_gap_2}, #{$azurestorm}, #{$color_gap_3}, #{$azurestorm};
+  // Crimson Yoto color palette
+  --crimson-hover: #{$crimson_hover};
+  --crimson-button: #{$crimson_button};
+  --crimson-umbra: #{$crimson_umbra};
+  --flaming-crimson: #{$crimson}, #{$color_gap_1}, #{$crimson}, #{$color_gap_2}, #{$crimson}, #{$color_gap_3}, #{$crimson};
+  // Onikiri Reforged color palette
+  --reforged-hover: #{$reforged_hover};
+  --reforged-button: #{$reforged_button};
+  --reforged-umbra: #{$reforged_umbra};
+  --flaming-reforged: #{$reforged}, #{$color_gap_1}, #{$reforged}, #{$color_gap_2}, #{$reforged}, #{$color_gap_3}, #{$reforged};
+  // Monumental Otakemaru color palette
+  --monumental-hover: #{$monumental_hover};
+  --monumental-button: #{$monumental_button};
+  --monumental-umbra: #{$monumental_umbra};
+  --flaming-monumental: #{$monumental}, #{$color_gap_1}, #{$monumental}, #{$color_gap_2}, #{$monumental}, #{$color_gap_3}, #{$monumental};
+  // Others
+  --filter: drop-shadow(#{$base_size} #{$base_size} #{$base_size} var(--shadow)) contrast(150%);
+  --shade: 0 0 calc(#{$base_size} / 10) var(--button);
+  --shade-hover: 0 0 calc(#{$base_size} / 10) var(--button-hover);
+}
+
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+  width: fill-available;
+  width: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-width: 100%;
+  min-width: fill-available;
+  min-width: -webkit-fill-available;
+  color: #F5F5F5;
+  font: 400 calc(#{$base_size} / 2)/1 'Raleway', sans-serif;
+  background: #0A0A0A;
+  overflow: hidden;
+
+  #quote-box {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+    > div { height: 100%; }
+    
+    > div:first-child {
+      display: flex;
+      justify-content: center;
+      
+      picture {
+        z-index: 1;
+
+        img {
+          max-height: 100%;
+          width: auto;
+          filter: var(--filter);
+        }
+      }
+    }
+
+    > div:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: calc(#{$base_size} * 5) calc(#{$base_size} * 2);
+      z-index: 1;
+      text-align: center;
+      text-shadow: var(--shade);
+      user-select: none;
+
+      #text { font: 400 calc(#{$base_size} * 1.5)/1 'Metal Mania', cursive; }
+
+      #author {
+        align-self: flex-end;
+        text-align: right;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        text-shadow: none;
+
+        a {
+          display: block;
+          padding: calc(#{$base_size} / 2);
+          color: inherit;
+          text-decoration: none;
+          background: var(--button);
+          border-radius: calc(#{$base_size} / 10);
+          box-shadow: var(--shade);
+          transition: all .5s ease-out;
+
+          &:hover,
+          &:focus {
+            background: var(--button-hover);
+            box-shadow: var(--shade-hover);
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .background {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #quote-box::before {
+    @extend .background;
+    background: linear-gradient(45deg, var(--flaming));
+    animation: flaming-background 2.5s ease-in infinite alternate both;
+  }
+  
+  #quote-box::after {
+    @extend .background;
+    backdrop-filter: blur(calc(#{$base_size} * 5));
+  }
+  
+  @media only screen and (orientation: portrait), (max-width: 1000px) {
+    #quote-box {  
+      picture { opacity: 0.5; }
+      
+      > div:last-child { position: absolute; }
+    }
+  }
+}
+
+@keyframes flaming-background {
+  0% { background: linear-gradient(30deg, var(--flaming)); }
+  5% { background: linear-gradient(31.5deg, var(--flaming)); }
+  10% { background: linear-gradient(33deg, var(--flaming)); }
+  15% { background: linear-gradient(34.5deg, var(--flaming)); }
+  20% { background: linear-gradient(36deg, var(--flaming)); }
+  25% { background: linear-gradient(37.5deg, var(--flaming)); }
+  30% { background: linear-gradient(39deg, var(--flaming)); }
+  35% { background: linear-gradient(40.5deg, var(--flaming)); }
+  40% { background: linear-gradient(42deg, var(--flaming)); }
+  45% { background: linear-gradient(43.5deg, var(--flaming)); }
+  50% { background: linear-gradient(45deg, var(--flaming)); }
+  55% { background: linear-gradient(46.5deg, var(--flaming)); }
+  60% { background: linear-gradient(48deg, var(--flaming)); }
+  65% { background: linear-gradient(49.5deg, var(--flaming)); }
+  70% { background: linear-gradient(51deg, var(--flaming)); }
+  75% { background: linear-gradient(52.5deg, var(--flaming)); }
+  80% { background: linear-gradient(54deg, var(--flaming)); }
+  85% { background: linear-gradient(55.5deg, var(--flaming)); }
+  90% { background: linear-gradient(57deg, var(--flaming)); }
+  95% { background: linear-gradient(58.5deg, var(--flaming)); }
+  100% {
+    background: linear-gradient(60deg, var(--flaming));
+    transform: scale(1.5);
+  }
+}
+
+@keyframes changing {
+  0%, 100% { margin-left: 0; }
+  50% {
+    margin-left: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes showing { 50% { opacity: 0; } }
+
+@keyframes change-color {
+  10% { filter: var(--filter) hue-rotate(330deg); }
+  11% { filter: var(--filter) hue-rotate(0); }
+}

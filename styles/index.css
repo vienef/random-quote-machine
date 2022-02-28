@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+:root {
+  --inferno-hover: #6554ae;
+  --inferno-button: #2c2796;
+  --inferno-umbra: rgba(139, 114, 190, 0.5);
+  --flaming-inferno: rgba(44, 39, 150, 0.5), rgba(63, 54, 158, 0.5), rgba(82, 69, 166, 0.5), rgba(101, 84, 174, 0.5), rgba(120, 99, 182, 0.5), rgba(139, 114, 190, 0.5), rgba(120, 99, 182, 0.5), rgba(101, 84, 174, 0.5), rgba(82, 69, 166, 0.5), rgba(63, 54, 158, 0.5), rgba(44, 39, 150, 0.5), transparent 20%, transparent 30%, rgba(44, 39, 150, 0.5), rgba(63, 54, 158, 0.5), rgba(82, 69, 166, 0.5), rgba(101, 84, 174, 0.5), rgba(120, 99, 182, 0.5), rgba(139, 114, 190, 0.5), rgba(120, 99, 182, 0.5), rgba(101, 84, 174, 0.5), rgba(82, 69, 166, 0.5), rgba(63, 54, 158, 0.5), rgba(44, 39, 150, 0.5), transparent 45%, transparent 55%, rgba(44, 39, 150, 0.5), rgba(63, 54, 158, 0.5), rgba(82, 69, 166, 0.5), rgba(101, 84, 174, 0.5), rgba(120, 99, 182, 0.5), rgba(139, 114, 190, 0.5), rgba(120, 99, 182, 0.5), rgba(101, 84, 174, 0.5), rgba(82, 69, 166, 0.5), rgba(63, 54, 158, 0.5), rgba(44, 39, 150, 0.5), transparent 70%, transparent 80%, rgba(44, 39, 150, 0.5), rgba(63, 54, 158, 0.5), rgba(82, 69, 166, 0.5), rgba(101, 84, 174, 0.5), rgba(120, 99, 182, 0.5), rgba(139, 114, 190, 0.5), rgba(120, 99, 182, 0.5), rgba(101, 84, 174, 0.5), rgba(82, 69, 166, 0.5), rgba(63, 54, 158, 0.5), rgba(44, 39, 150, 0.5);
+  --azurestorm-hover: #6ac9be;
+  --azurestorm-button: teal;
+  --azurestorm-umbra: rgba(177, 249, 232, 0.5);
+  --flaming-azurestorm: rgba(0, 128, 128, 0.5), rgba(35, 152, 149, 0.5), rgba(71, 176, 170, 0.5), rgba(106, 201, 190, 0.5), rgba(142, 225, 211, 0.5), rgba(177, 249, 232, 0.5), rgba(142, 225, 211, 0.5), rgba(106, 201, 190, 0.5), rgba(71, 176, 170, 0.5), rgba(35, 152, 149, 0.5), rgba(0, 128, 128, 0.5), transparent 20%, transparent 30%, rgba(0, 128, 128, 0.5), rgba(35, 152, 149, 0.5), rgba(71, 176, 170, 0.5), rgba(106, 201, 190, 0.5), rgba(142, 225, 211, 0.5), rgba(177, 249, 232, 0.5), rgba(142, 225, 211, 0.5), rgba(106, 201, 190, 0.5), rgba(71, 176, 170, 0.5), rgba(35, 152, 149, 0.5), rgba(0, 128, 128, 0.5), transparent 45%, transparent 55%, rgba(0, 128, 128, 0.5), rgba(35, 152, 149, 0.5), rgba(71, 176, 170, 0.5), rgba(106, 201, 190, 0.5), rgba(142, 225, 211, 0.5), rgba(177, 249, 232, 0.5), rgba(142, 225, 211, 0.5), rgba(106, 201, 190, 0.5), rgba(71, 176, 170, 0.5), rgba(35, 152, 149, 0.5), rgba(0, 128, 128, 0.5), transparent 70%, transparent 80%, rgba(0, 128, 128, 0.5), rgba(35, 152, 149, 0.5), rgba(71, 176, 170, 0.5), rgba(106, 201, 190, 0.5), rgba(142, 225, 211, 0.5), rgba(177, 249, 232, 0.5), rgba(142, 225, 211, 0.5), rgba(106, 201, 190, 0.5), rgba(71, 176, 170, 0.5), rgba(35, 152, 149, 0.5), rgba(0, 128, 128, 0.5);
+  --crimson-hover: #c94631;
+  --crimson-button: #990000;
+  --crimson-umbra: rgba(233, 116, 81, 0.5);
+  --flaming-crimson: rgba(153, 0, 0, 0.5), rgba(169, 23, 16, 0.5), rgba(185, 46, 32, 0.5), rgba(201, 70, 49, 0.5), rgba(217, 93, 65, 0.5), rgba(233, 116, 81, 0.5), rgba(217, 93, 65, 0.5), rgba(201, 70, 49, 0.5), rgba(185, 46, 32, 0.5), rgba(169, 23, 16, 0.5), rgba(153, 0, 0, 0.5), transparent 20%, transparent 30%, rgba(153, 0, 0, 0.5), rgba(169, 23, 16, 0.5), rgba(185, 46, 32, 0.5), rgba(201, 70, 49, 0.5), rgba(217, 93, 65, 0.5), rgba(233, 116, 81, 0.5), rgba(217, 93, 65, 0.5), rgba(201, 70, 49, 0.5), rgba(185, 46, 32, 0.5), rgba(169, 23, 16, 0.5), rgba(153, 0, 0, 0.5), transparent 45%, transparent 55%, rgba(153, 0, 0, 0.5), rgba(169, 23, 16, 0.5), rgba(185, 46, 32, 0.5), rgba(201, 70, 49, 0.5), rgba(217, 93, 65, 0.5), rgba(233, 116, 81, 0.5), rgba(217, 93, 65, 0.5), rgba(201, 70, 49, 0.5), rgba(185, 46, 32, 0.5), rgba(169, 23, 16, 0.5), rgba(153, 0, 0, 0.5), transparent 70%, transparent 80%, rgba(153, 0, 0, 0.5), rgba(169, 23, 16, 0.5), rgba(185, 46, 32, 0.5), rgba(201, 70, 49, 0.5), rgba(217, 93, 65, 0.5), rgba(233, 116, 81, 0.5), rgba(217, 93, 65, 0.5), rgba(201, 70, 49, 0.5), rgba(185, 46, 32, 0.5), rgba(169, 23, 16, 0.5), rgba(153, 0, 0, 0.5);
+  --reforged-hover: #f55301;
+  --reforged-button: #e60001;
+  --reforged-umbra: rgba(255, 139, 1, 0.5);
+  --flaming-reforged: rgba(230, 0, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(255, 139, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(230, 0, 1, 0.5), transparent 20%, transparent 30%, rgba(230, 0, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(255, 139, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(230, 0, 1, 0.5), transparent 45%, transparent 55%, rgba(230, 0, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(255, 139, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(230, 0, 1, 0.5), transparent 70%, transparent 80%, rgba(230, 0, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(255, 139, 1, 0.5), rgba(250, 111, 1, 0.5), rgba(245, 83, 1, 0.5), rgba(240, 56, 1, 0.5), rgba(235, 28, 1, 0.5), rgba(230, 0, 1, 0.5);
+  --monumental-hover: #b947b1;
+  --monumental-button: #512889;
+  --monumental-umbra: rgba(255, 92, 204, 0.5);
+  --flaming-monumental: rgba(81, 40, 137, 0.5), rgba(116, 50, 150, 0.5), rgba(151, 61, 164, 0.5), rgba(185, 71, 177, 0.5), rgba(220, 82, 191, 0.5), rgba(255, 92, 204, 0.5), rgba(220, 82, 191, 0.5), rgba(185, 71, 177, 0.5), rgba(151, 61, 164, 0.5), rgba(116, 50, 150, 0.5), rgba(81, 40, 137, 0.5), transparent 20%, transparent 30%, rgba(81, 40, 137, 0.5), rgba(116, 50, 150, 0.5), rgba(151, 61, 164, 0.5), rgba(185, 71, 177, 0.5), rgba(220, 82, 191, 0.5), rgba(255, 92, 204, 0.5), rgba(220, 82, 191, 0.5), rgba(185, 71, 177, 0.5), rgba(151, 61, 164, 0.5), rgba(116, 50, 150, 0.5), rgba(81, 40, 137, 0.5), transparent 45%, transparent 55%, rgba(81, 40, 137, 0.5), rgba(116, 50, 150, 0.5), rgba(151, 61, 164, 0.5), rgba(185, 71, 177, 0.5), rgba(220, 82, 191, 0.5), rgba(255, 92, 204, 0.5), rgba(220, 82, 191, 0.5), rgba(185, 71, 177, 0.5), rgba(151, 61, 164, 0.5), rgba(116, 50, 150, 0.5), rgba(81, 40, 137, 0.5), transparent 70%, transparent 80%, rgba(81, 40, 137, 0.5), rgba(116, 50, 150, 0.5), rgba(151, 61, 164, 0.5), rgba(185, 71, 177, 0.5), rgba(220, 82, 191, 0.5), rgba(255, 92, 204, 0.5), rgba(220, 82, 191, 0.5), rgba(185, 71, 177, 0.5), rgba(151, 61, 164, 0.5), rgba(116, 50, 150, 0.5), rgba(81, 40, 137, 0.5);
+  --filter: drop-shadow(5vh 5vh 5vh var(--shadow)) contrast(150%);
+  --shade: 0 0 calc(5vh / 10) var(--button);
+  --shade-hover: 0 0 calc(5vh / 10) var(--button-hover);
+}
+
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+  width: fill-available;
+  width: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-width: 100%;
+  min-width: fill-available;
+  min-width: -webkit-fill-available;
+  color: #F5F5F5;
+  font: 400 calc(5vh / 2)/1 "Raleway", sans-serif;
+  background: #0A0A0A;
+  overflow: hidden;
+}
+body #quote-box {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+body #quote-box > div {
+  height: 100%;
+}
+body #quote-box > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+body #quote-box > div:first-child picture {
+  z-index: 1;
+}
+body #quote-box > div:first-child picture img {
+  max-height: 100%;
+  width: auto;
+  filter: var(--filter);
+}
+body #quote-box > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: calc(5vh * 5) calc(5vh * 2);
+  z-index: 1;
+  text-align: center;
+  text-shadow: var(--shade);
+  user-select: none;
+}
+body #quote-box > div:last-child #text {
+  font: 400 calc(5vh * 1.5)/1 "Metal Mania", cursive;
+}
+body #quote-box > div:last-child #author {
+  align-self: flex-end;
+  text-align: right;
+}
+body #quote-box > div:last-child div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  text-shadow: none;
+}
+body #quote-box > div:last-child div a {
+  display: block;
+  padding: calc(5vh / 2);
+  color: inherit;
+  text-decoration: none;
+  background: var(--button);
+  border-radius: calc(5vh / 10);
+  box-shadow: var(--shade);
+  transition: all 0.5s ease-out;
+}
+body #quote-box > div:last-child div a:hover, body #quote-box > div:last-child div a:focus {
+  background: var(--button-hover);
+  box-shadow: var(--shade-hover);
+  outline: none;
+}
+body .background, body #quote-box::after, body #quote-box::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #quote-box::before {
+  background: linear-gradient(45deg, var(--flaming));
+  animation: flaming-background 2.5s ease-in infinite alternate both;
+}
+body #quote-box::after {
+  backdrop-filter: blur(calc(5vh * 5));
+}
+@media only screen and (orientation: portrait), (max-width: 1000px) {
+  body #quote-box picture {
+    opacity: 0.5;
+  }
+  body #quote-box > div:last-child {
+    position: absolute;
+  }
+}
+
+@keyframes flaming-background {
+  0% {
+    background: linear-gradient(30deg, var(--flaming));
+  }
+  5% {
+    background: linear-gradient(31.5deg, var(--flaming));
+  }
+  10% {
+    background: linear-gradient(33deg, var(--flaming));
+  }
+  15% {
+    background: linear-gradient(34.5deg, var(--flaming));
+  }
+  20% {
+    background: linear-gradient(36deg, var(--flaming));
+  }
+  25% {
+    background: linear-gradient(37.5deg, var(--flaming));
+  }
+  30% {
+    background: linear-gradient(39deg, var(--flaming));
+  }
+  35% {
+    background: linear-gradient(40.5deg, var(--flaming));
+  }
+  40% {
+    background: linear-gradient(42deg, var(--flaming));
+  }
+  45% {
+    background: linear-gradient(43.5deg, var(--flaming));
+  }
+  50% {
+    background: linear-gradient(45deg, var(--flaming));
+  }
+  55% {
+    background: linear-gradient(46.5deg, var(--flaming));
+  }
+  60% {
+    background: linear-gradient(48deg, var(--flaming));
+  }
+  65% {
+    background: linear-gradient(49.5deg, var(--flaming));
+  }
+  70% {
+    background: linear-gradient(51deg, var(--flaming));
+  }
+  75% {
+    background: linear-gradient(52.5deg, var(--flaming));
+  }
+  80% {
+    background: linear-gradient(54deg, var(--flaming));
+  }
+  85% {
+    background: linear-gradient(55.5deg, var(--flaming));
+  }
+  90% {
+    background: linear-gradient(57deg, var(--flaming));
+  }
+  95% {
+    background: linear-gradient(58.5deg, var(--flaming));
+  }
+  100% {
+    background: linear-gradient(60deg, var(--flaming));
+    transform: scale(1.5);
+  }
+}
+@keyframes changing {
+  0%, 100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100%;
+    opacity: 0;
+  }
+}
+@keyframes showing {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes change-color {
+  10% {
+    filter: var(--filter) hue-rotate(330deg);
+  }
+  11% {
+    filter: var(--filter) hue-rotate(0);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
