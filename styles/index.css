@@ -42,9 +42,6 @@ body {
   min-height: 100vh;
   min-height: fill-available;
   min-height: -webkit-fill-available;
-  min-width: 100%;
-  min-width: fill-available;
-  min-width: -webkit-fill-available;
   color: #F5F5F5;
   font: 400 calc(5vh / 2)/1 "Raleway", sans-serif;
   background: #0A0A0A;
@@ -54,7 +51,6 @@ body #quote-box {
   display: flex;
   align-items: center;
   height: 100vh;
-  width: 100%;
   overflow: hidden;
 }
 body #quote-box > div {
